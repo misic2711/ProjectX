@@ -2,6 +2,8 @@
 <?php
 include 'includes/autoloader.inc.php';
 
+include_once 'includes/header.php';
+
 Session::sessionStart();
 
 Session::userLogged();
@@ -42,5 +44,7 @@ if(isset($_POST['login'])) {
 
     $user_obj->loginUser($login_cred);
 }
+include_once 'includes/footer.php';
+
 
 ?>
