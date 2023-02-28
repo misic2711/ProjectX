@@ -39,7 +39,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `first_name`, `last_name`, `subject`) VALUES
-(1, 'kika@gmail.com', 'Kika voli Nenu', 'vlim te bubo najvise na svetu, najbolji smo u duetu, lupi me po dupetu, hehge'),
+(1, 'kika@gmail.com', 'asdasd),
 (2, 'asdasd', 'asdasd', 'asdasdas');
 
 -- --------------------------------------------------------
