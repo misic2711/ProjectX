@@ -34,9 +34,6 @@ $user_obj = new User();
 </form>
 
 <?php
-//$user_obj->defineLoginForm();
-//echo $user_obj->loginForm;
-
 if(isset($_POST['login'])) {
     $login_cred = [
         'email' => $_POST['email'],

@@ -22,7 +22,7 @@
     <label>Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name="submit">
 
 
 
@@ -31,6 +31,18 @@
         $first_name = $_POST['firstname'];
         $last_name = $_POST['lastname'];
         $subject = $_POST['subject'];
+
+
+$db_host = 'localhost';
+$db_username = 'root';
+$db_password = '';
+$db_name = 'social_network';
+
+$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
+
+if($conn->connect_error) {
+    die('Error connecting with database: ' . $conn->connect_error);
+}
         
         
 

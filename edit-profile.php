@@ -1,5 +1,9 @@
 <?php
+
 include 'includes/autoloader.inc.php';
+
+include_once 'includes/header.php';
+
 Session::sessionStart();
 Session::userNotLogged();
 
@@ -15,6 +19,7 @@ if(isset($_POST['save'])){
 
 
 }
-
+"<br>";
 Session::logout();
+include_once 'includes/footer.php';
 ?>

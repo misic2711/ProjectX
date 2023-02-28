@@ -1,4 +1,7 @@
+<?php include_once 'includes/autoloader.inc.php'; ?>
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +20,8 @@
     <a class="active-b" href="login.php">Log in</a>
     <a href="logged_in.php">All users</a>
     <a href="contact.php">Contact us</a>
-    <a href="login.php"><?php Session::logout(); ?></a>
+    <a href="edit-profile.php">Profile</a>
+    <?php Session::logout(); ?>
     
   </div>
 </div>
