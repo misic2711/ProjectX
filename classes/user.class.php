@@ -34,7 +34,7 @@ class User extends DbConnection {
         while($row = $selectResult->fetch_assoc()) {
             echo 'Full name: ' . $row['user_full_name'] . "<br>";
             echo 'Email: ' . $row['user_email'] . "<br>";
-            echo 'Profile picture: ' . $row['profile_picture'] . '<hr>';
+            echo "<img src='" . $row['profile_picture'] . "' width='400'>" . '<hr>';
         }
 
     }
